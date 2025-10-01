@@ -6,7 +6,6 @@ const elFooter = document.getElementById("footer");
 
 function init() {
   elLoader.classList.remove("hidden");
-  elFooter.classList.add("hidden");
   fetch("https://json-api.uz/api/project/fn43/cars")
     .then((res) => {
       return res.json();
@@ -16,11 +15,10 @@ function init() {
     })
     .catch(() => {
       elErrorUi.classList.remove("hidden");
-      elFooter.classList.remove("hidden");
+      console.log("Xotolik bor");
     })
     .finally(() => {
       elLoader.classList.add("hidden");
-      elFooter.classList.remove("hidden");
     });
 }
 init();
