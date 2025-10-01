@@ -15,7 +15,6 @@ function init() {
     })
     .catch(() => {
       elErrorUi.classList.remove("hidden");
-      console.log("Xotolik bor");
     })
     .finally(() => {
       elLoader.classList.add("hidden");
