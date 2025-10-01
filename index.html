@@ -15,7 +15,7 @@
   <body>
     <h1 class="text-3xl font-bold text-center my-8 text-gray-800">Cars List</h1>
     <!-- loader -->
-    <div class="grid grid-cols-2 gap-5 hidden" id="loader">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5" id="loader">
       <div class="card bg-base-100 shadow-sm">
         <div class="card-body">
           <div class="skeleton h-[27px] mb-3"></div>
@@ -139,11 +139,11 @@
 
     <h2 class="text-3xl font-medium hidden" id="error">Xatoli yuz berdi</h2>
 
-    <div class="grid grid-cols-2 gap-5" id="parent"></div>
-    <template id="cardTemp"
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5" id="parent"></div>
+    <template class="Responsive-Template" id="cardTemp"
       ><div class="card bg-base-100 shadow-sm">
         <div class="card-body">
-          <h2 class="bg-red card-title"></h2>
+          <h1 class="bg-red card-title"></h1>
           <p><strong>Description: </strong><span class="description"></span></p>
           <p><strong>Trim: </strong><span class="trim"></span></p>
           <p><strong>ClassName: </strong><span class="colorName"></span></p>
@@ -153,7 +153,7 @@
           </p>
           <p><strong>MaxSpeed: </strong><span class="maxSpeed"></span></p>
           <p><strong>Year: </strong><span class="year"></span></p>
-          <p><strong>fuelType: </strong><span class="fuelType"></span></p>
+          <p><strong>FuelType: </strong><span class="fuelType"></span></p>
           <p><strong>Generation: </strong><span class="generation"></span></p>
           <p><strong>Country: </strong><span class="country"></span></p>
           <p><strong>Engine: </strong><span class="engine"></span></p>

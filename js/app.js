@@ -25,7 +25,7 @@ function ui(cars) {
   elParent.innerHTML = "";
   cars.forEach((element) => {
     const clone = elCardTemp.cloneNode(true).content;
-    const elTitle = (clone.querySelector("h2").innerText = element.name);
+    const elTitle = (clone.querySelector("h1").innerText = element.name);
     const elDescription = (clone.querySelector(".description").innerText =
       element.description);
     const elTrim = (clone.querySelector(".trim").innerHTML = element.trim);
